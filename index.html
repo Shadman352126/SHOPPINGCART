@@ -4,6 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Mall</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="container mx-auto">
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img src="images/prod1.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 id="addCard" class="card-title">product-1</h2>
+            <h3><span>Price:</span><span id="itemPrice" class="item-price">$250</span></h3>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart()" class="btn btn-primary">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img src="images/prod2.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 id="addCard1" class="card-title">product-2</h2>
+            <h3><span>Price:</span><span id="itemPrice1" class="item-price">$250</span></h3>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart()" class="btn btn-primary">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img src="images/prod3.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 id="addCard2" class="card-title">product-3</h2>
+            <h3><span>Price:</span><span id="itemPrice2" class="item-price">$250</span></h3>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart()" class="btn btn-primary">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl product-card">
+          <figure>
+            <img src="images/prod4.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 id="addCard3" class="card-title">product-4</h2>
+            <h3>
+              <span>Price:</span
+              ><span id="itemPrice3" class="item-price">$250</span>
+            </h3>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart()" class="btn btn-primary">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Cart -->
+       <div class="card w-full bg-base-500 shadow-xl text-center p-6 m-8">
+          <div class="m-8 text-center">
+            <h2 class="font-bold text-3xl">Cart</h2>
+            <ul id="item-Card"></ul>
+          </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
